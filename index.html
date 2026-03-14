@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Duvard</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="assets/icons/Favicon.ico" type="image/x-icon">
+    <!--Google Fonts: Quicksand-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <button class="mobile-nav-toggle" type="button" aria-label="Abrir menú" aria-controls="nav_menu" aria-expanded="false">
+        </button>
+        <nav class="nav">
+            <ul id="nav_menu" class="nav_menu" data-visible="false">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#proyects">Proyectos</a></li>
+                <li><a href="#contact">Contáctame</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="home" class="presentation_container">
+        <div class="presentation_img">
+            <img loading="lazy" src="/assets/images/lechuza-edit.webp" alt="owl-black-white-edit-principal-image">
+        </div>
+        <div class="portfolio_img">
+            <img loading="lazy" src="/assets/images/Portafolio-Lettering.webp" alt="Portafolio-lettering">
+        </div>
+        <div class="presentation_msg ticker-wrap">
+            <div class="ticker-track" id="track">
+                <p class="ticker-item" >♢ ♢ El cambio es la unica constante ♢ ♢</p>
+            </div>
+        </div>
+    </div>
+    <section id="about" class="aboutme-container">
+        <div class="aboutme-photo">
+            <div>
+                <img loading="lazy" src="/assets/images/clip-photo.webp" alt="clip-metallic" class="photo-clip">
+                <img class="photo-duvard" loading="lazy" src="/assets/images/Photo-Duvard.webp"
+                    alt="Photo-Duvard-Cisneros">
+                <p>Duvard Cisneros</p>
+            </div>
+        </div>
+        <div class="aboutme-presentation">
+            <div>
+                <h2>Sobre Mí</h2>
+                <span class="aboutme-job">Disponible para trabajar</span>
+                <p>
+                    Soy un desarrollador autodidacta enfocado en el diseño web y el <span>desarrollo frontend</span>.
+                    Disfruto convertir ideas en interfaces claras, atractivas y funcionales. Me gusta cuidar los
+                    detalles y siempre encuentro la forma de resolver lo que no sé. Programar, para mí, es una forma de
+                    dar forma visible a lo que imaginas.
+                </p>
+                <div class="aboutme-buttons">
+                    <a href="#contact">Contactame</a>
+                    <a href="https://www.linkedin.com/in/duvard-cisneros-9a073323b" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="education_container">
+        <div class="education_information">
+            <div>
+                <h3>Educación</h3>
+                <p>
+                    Estudio <span>Ingeniería en Sistemas de Información</span> en la <span>Universidad Central del
+                        Ecuador</span> desde 2020, actualmente me encuentro en 9no semestre. A lo largo de la carrera he
+                    complementado mi formación con cursos prácticos y herramientas enfocadas en desarrollo web y diseño.
+                </p>
+                <ul>
+                    <li>Conocimiento en HTML, CSS, SQL, Python, Javascript, AWS, Docker.</li>
+                    <li>Manejo de herramientas de diseño como Figma, Photoshop e Illustrator</li>
+                    <li>Certificación gratuita de AWS (en proceso)</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Lenguajes</h3>
+                <ul>
+                    <li><b>Nativo:</b> Español</li>
+                    <li><b>Otros:</b> Ingles B2</li>
+                </ul>
+            </div>
+        </div>
+        <div class="education_cv">
+            <h3>Mi curriculum Vitae</h3>
+            <img src="/assets/images/qr-cv-duvard-cisneros.webp" alt="QR of cv">
+            <a class="cv-download"
+                href="https://drive.google.com/file/d/18znwczLg7LKqvBQSppOiX4lZsAhv6VDJ/view?usp=drive_link"
+                target="_blank" rel="noopener noreferrer">Descargar CV</a>
+        </div>
+    </section>
+    <section id="proyects" class="projects-section">
+        <h3 class="projects-title">Proyectos</h3>
+        <div class="projects-list">
+            <article class="project-card project-card--green">
+                <div class="project-media" aria-hidden="true">
+                    <img src="/assets/images/GreenCommerce.webp" alt="green-commerce-image-project">
+                </div>
+                <div class="project-content">
+                    <h4>GreenCommerce</h4>
+                    <ul class="project-tags">
+                        <li>Nextjs</li>
+                        <li>Spring Boot</li>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                        <li>AWS: EC2 - S3 - RDS</li>
+                        <li>Docker</li>
+                        <li>Github Actions</li>
+                    </ul>
+                    <p>
+                        GreenCommerce es una plataforma de e-commerce distribuida para productos sostenibles.
+                        Utiliza microservicios, autenticación JWT y despliegue en la nube para ofrecer escalabilidad
+                        y rendimiento eficiente.
+                    </p>
+                    <div class="project-actions">
+                        <a class="project-btn" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/Duvard1/GreenCommerce.git">Repositorio</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card project-card--pink">
+                <div class="project-media" aria-hidden="true">
+                    <img src="/assets/images/IdentidadRural.webp" alt="identidad-rural-image-project">
+                </div>
+                <div class="project-content">
+                    <h4>Identidad Rural</h4>
+                    <ul class="project-tags">
+                        <li>Nextjs</li>
+                        <li>TypeScript</li>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                        <li>Power BI</li>
+                    </ul>
+                    <p>
+                        Plataforma desarrollada para visibilizar la realidad de las parroquias rurales del Ecuador,
+                        combinando análisis de datos, entrevistas y diseño digital. Se realizó procesamiento de datos
+                        con
+                        Python, diseño y desarrollo web.
+                    </p>
+                    <div class="project-actions">
+                        <a class="project-btn" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/KevinYuvi/ConagopareWeb.git">Repositorio</a>
+                        <a class="project-btn" target="_blank" rel="noopener noreferrer"
+                            href="https://www.identidadrural.ec/">Página</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card project-card--blue">
+                <div class="project-media" aria-hidden="true">
+                    <img src="/assets/images/PortafolioWeb.webp" alt="portafolio-web-image-project">
+                </div>
+                <div class="project-content">
+                    <h4>Portafolio Web</h4>
+                    <ul class="project-tags">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Photoshop</li>
+                    </ul>
+                    <p>
+                        Pagina web desarrollada para visibilizar mostrar mis proyectos realizados, y poner en practica
+                        mis conocimientos en programación y diseño web, las imagenes se realizaron con IA y su edicion
+                        fue en photoshop.
+                    </p>
+                    <div class="project-actions">
+                        <a class="project-btn" target="_blank" rel="noopener noreferrer" href="#">Repositorio</a>
+                        <a class="project-btn" target="_blank" rel="noopener noreferrer" href="#">Página</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="thanks-card">
+        <h3 class="thanks-title">Gracias</h3>
+        <p class="thanks-text">Ponte en contacto conmigo por correo:</p>
+        <span class="thanks-link">duvardesteban@hotmail.com</span>
+        <p class="thanks-text">Ponte en contacto conmigo por Whatsapp: +593 988 249 980</p>
+        <a class="thanks-whatsapp" target="_blank" rel="noopener noreferrer" href="https://wa.me/593988249980"
+            aria-label="Contactar por Whatsapp">
+            <img src="/assets/icons/whatsapp.svg" alt="whatsapp-icon">
+        </a>
+    </section>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Volver arriba">
+        <img src="/assets/icons/arrow-up.svg" alt="" aria-hidden="true">
+    </button>
+    <script src="/js/animations.js" defer></script>
+    <script src="/js/main.js" defer></script>
+</body>
+
+</html>

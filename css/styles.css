@@ -1,0 +1,565 @@
+body {
+    background-color: #ECEFF3;
+    overflow-x: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+/* ----- Empieza: Menu Responsive ----- */
+.nav_menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+}
+
+.nav_menu a {
+    text-decoration: none;
+}
+
+
+header {
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+/* ----- Termina: Menu Responsive ----- */
+
+/* ----- Empieza: Seccion introduccion portafolio ----- */
+
+.presentation_container {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.presentation_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.presentation_img {
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+
+
+.presentation_msg {
+    border-top: 3px solid #484848;
+    border-bottom: 3px solid #484848;
+    padding: 0.8rem;
+}
+
+.presentation_msg p {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.portfolio_img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: max-content;
+}
+
+.portfolio_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Combina translateX del centrado con el translateY del scroll-reveal */
+.portfolio_img.scroll-reveal {
+    transform: translateX(-50%) translateY(16px);
+}
+
+
+
+.portfolio_img.scroll-reveal.is-visible {
+    transform: translateX(-50%) translateY(0);
+}
+
+
+
+/* ----- Termina: Seccion Introduccion Portafolio ----- */
+
+/* ----- Empieza: Seccion Sobre Mi ----- */
+
+.aboutme-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #DED9D3;
+    padding: 4rem 2rem;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(30px, 2rem, 3rem);
+
+}
+
+.aboutme-photo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    transform: rotate(-10deg);
+}
+
+/* Combina la rotacion con el translateY del scroll-reveal */
+.aboutme-photo.scroll-reveal {
+    transform: rotate(-10deg) translateY(16px);
+}
+
+.aboutme-photo.scroll-reveal.is-visible {
+    transform: rotate(-10deg) translateY(0);
+}
+
+div.aboutme-photo p {
+    font-size: clamp(3.5rem, 4vw, 4rem);
+    font-family: 'Trickster', sans-serif;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: wrap;
+    text-align: center;
+    z-index: 20;
+    line-height: 50px;
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    color: #002b6b;
+    margin: 0;
+}
+
+.aboutme-presentation {
+    flex-grow: 3;
+    flex-basis: 480px;
+    padding: 2vw 4vw;
+}
+
+
+.aboutme-presentation>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.aboutme-photo>div {
+    background-color: #fdfdfd;
+    padding: 14px;
+    padding-bottom: 2.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    width: clamp(200px, 25vw, 300px);
+    margin-bottom: 40px;
+}
+
+div.aboutme-photo .photo-duvard {
+    width: clamp(175px, 22vw, 264px);
+    height: auto;
+    object-fit: cover;
+}
+
+.photo-clip {
+    width: 50px;
+    object-fit: cover;
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    transform: rotate(20deg);
+}
+
+.aboutme-presentation h2 {
+    font-family: 'Trickster', sans-serif;
+    margin: 0;
+    width: fit-content;
+}
+
+.aboutme-presentation span {
+    font-weight: bold;
+}
+
+.aboutme-presentation .aboutme-job::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #4CC3E4;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.aboutme-presentation p {
+    margin: 0;
+}
+
+p,
+li {
+    line-height: 1.5;
+}
+
+.aboutme-buttons button,
+.aboutme-buttons a,
+.education_cv .cv-download,
+.project-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #484848;
+    border: 2px solid #484848;
+    text-align: center;
+    padding: 12px 25px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.aboutme-buttons button:hover,
+.aboutme-buttons button:focus-visible,
+.aboutme-buttons a:hover,
+.aboutme-buttons a:focus-visible,
+.education_cv .cv-download:hover,
+.education_cv .cv-download:focus-visible,
+.project-btn:hover,
+.project-btn:focus-visible {
+    background-color: #484848;
+    color: white;
+}
+
+/* ----- Termina: Seccion Sobre Mi ----- */
+
+/* ----- Empieza: Seccion Mi Educacion ----- */
+
+.education_container {
+    background-color: #DCDEEB;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.education_information {
+    flex-grow: 3;
+    flex-basis: 480px;
+    padding: 2vw 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.education_container h3 {
+    font-family: 'Trickster', sans-serif;
+    margin: 0;
+    width: fit-content;
+    text-align: center;
+}
+
+.education_cv {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2vw 4vw;
+}
+
+.education_container span {
+    font-weight: bold;
+}
+
+.education_information p {
+    line-height: 1.5;
+}
+
+.education_information ul {
+    padding-left: 18px;
+}
+
+.education_cv>img {
+    width: clamp(200px, 20vw, 250px);
+}
+
+
+/* ----- Termina: Seccion Mi Educacion ----- */
+
+/* ----- Empieza: Seccion Mis Proyectos ----- */
+
+.projects-section {
+    padding: 4rem;
+}
+
+.projects-title {
+    font-family: 'Trickster', sans-serif;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project-card {
+    --card-bg: #e4e4e4;
+    --tag-bg: #cfd7d1;
+    --tag-text: #4b4b4b;
+    --media-bg: linear-gradient(135deg, #2f5e3b, #5f8f5c);
+    display: flex;
+    border-radius: 26px;
+    overflow: hidden;
+    background: var(--card-bg);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.project-card--green {
+    --card-bg: #e2e2e2;
+    --tag-bg: #cfd7d1;
+    --media-bg: linear-gradient(135deg, #2f5e3b, #5f8f5c);
+}
+
+.project-card--pink {
+    --card-bg: #f1dede;
+    --tag-bg: #e7c9c9;
+    --media-bg: linear-gradient(135deg, #c68989, #e3bcbc);
+}
+
+.project-card--blue {
+    --card-bg: #d9def5;
+    --tag-bg: #c6cdf0;
+    --media-bg: linear-gradient(135deg, #9aa5e6, #c8d0f6);
+}
+
+.project-media {
+    flex: 0 0 46%;
+    position: relative;
+}
+
+.project-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.project-content {
+
+    background: var(--card-bg);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-content h4 {
+    margin: 0;
+    font-family: 'Trickster', sans-serif;
+}
+
+.project-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 0;
+    margin: 0;
+}
+
+.project-tags li {
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 0.4rem 0.9rem;
+    border-radius: 100px;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.project-tags li:hover {
+    background: var(--media-bg);
+    color: white;
+}
+
+
+.project-content p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/*
+.project-btn {
+    align-self: flex-start;
+    text-decoration: none;
+    border: 2px solid var(--tag-text);
+    color: var(--tag-text);
+    background: transparent;
+    padding: 0.55rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(44, 102, 214, 0.25);
+}*/
+
+
+/* ----- Termina: Seccion Mis Proyectos ----- */
+
+/* ----- Empieza: Seccion Gracias ----- */
+
+.thanks-card {
+    background: #dedede;
+    padding: 3.5rem;
+    border-radius: 26px 26px 0px 0px;
+    box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.18);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.thanks-title {
+    font-family: 'Trickster', sans-serif;
+    font-size: clamp(2.2rem, 3vw, 3rem);
+    margin: 0px;
+}
+
+.thanks-text {
+    margin: 0px;
+}
+
+.thanks-link {
+    display: inline-block;
+    margin: 0px;
+    color: #2f2f2f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.thanks-whatsapp {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background: #bdbdbd;
+    color: #1b1b1b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+    margin: 0px auto;
+}
+
+.thanks-whatsapp img {
+    width: 30px;
+    height: auto;
+}
+
+.thanks-whatsapp:hover,
+.thanks-whatsapp:focus-visible {
+    background: #a8a8a8;
+}
+
+/* ----- Termina: Seccion Gracias ----- */
+
+/* ----- Empieza: Boton Volver Arriba ----- */
+
+.back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #484848;
+    color: #fff;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+    z-index: 999;
+}
+
+
+.back-to-top.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+    background: #2f2f2f;
+    outline: none;
+}
+
+.back-to-top:focus-visible {
+    box-shadow: 0 0 0 3px rgba(72, 72, 72, 0.35);
+}
+
+.back-to-top img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    pointer-events: none;
+    filter: brightness(0) invert(1);
+}
+
+/* ----- Termina: Boton Volver Arriba ----- */
+
+/* ----- Empieza: Scroll Reveal ----- */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+}
+
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* ----- Termina: Scroll Reveal ----- */

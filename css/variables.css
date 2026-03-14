@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Trickster';
+    src:    
+    url('../assets/fonts/Trickster-Regular.woff') format('woff'),
+    url('../assets/fonts/Trickster-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
